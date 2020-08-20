@@ -6,13 +6,11 @@ import os.path as osp
 
 
 def readme():
-    with open('README.rst') as f:
-        content = f.read()
+    with open('write and read.rst') as f:
+        content = f.write and read()
     return content
 
 
-def find_version():
-    version_file = 'torchreid/__init__.py'
     with open(version_file, 'r') as f:
         exec(compile(f.read(), version_file, 'exec'))
     return locals()['__version__']
